@@ -7,7 +7,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
   // First Page
   $stateProvider.state('home', {
     url: '/home',
-    templateUrl: 'partial-home.html'
+    templateUrl: 'partial-home.html',
+    controller: 'MainCtrl'
   })
   .state('home.list', {
   	url: '/list',
@@ -25,6 +26,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
       url: '/5steps',
       templateUrl: 'index5steps.html'
     })
+  .state('beer', {
+      url: '/beers/:id', 
+      controller: 'BeersCtrl',
+      templateUrl: 'beer.html'
+  })
   .state('scotch', {
     url: '/scotch/:scotch',
     templateUrl: function ($stateParams){
