@@ -6,7 +6,7 @@ var beerSchema=new Schema ({
   name: String,
   style:  String,
   image: String,
-  abv:  Number,
+  abv:  String,
   rating:  Number,
   reviews: [], 
 
