@@ -133,15 +133,21 @@
                <div ng-repeat='list in beerArray track by $index'>
             <div class="panel panel-default">
             
-              <a class="panel-heading" ui-sref='beer({id: list._id})'>Title: {{list.name}}</a>
+              <a class="panel-heading" ui-sref='beer({id: list._id})'>
+                {{list.name}}</a>
               <div class="panel-body">
-                Comment: {{list.style}}
-                Post By: {{list.abv}}
+                {{list.style}}
+                <br>
               </div>
               <div>
-              Image: <img class="image-beer" ng-src="{{list.image}}">
+              <img class="image-beer" ng-src="{{list.image}}">
               </div>
-                Rating: {{list.rating}} 
+
+              Post By: {{list.abv}}
+              <br>
+              <br>
+
+              Rating: {{list.rating}} 
 
               <button ng-click='increment($index)'>Increase Rating</button>
 
@@ -188,6 +194,8 @@
                 <button type="submit" class="btn btn-primary">Add</button>
               </form>
             
+        <br>
+        <br>
 
 
 
