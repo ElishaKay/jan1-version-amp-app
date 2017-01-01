@@ -1,10 +1,23 @@
 <div class="page-header">
-  <a href="/#/home">back</a>
 
   <div>
-  <h3>
-    <span>{{beer.name}}</span>
-    <span>{{beer.review}}
+  
+    <div class="jumbotron text-center">
+      <h2><span>{{beer.name}}</span></h2>
+      <p><strong>
+        {{beer.style}}
+      </p></strong>
+    </div>
+
+
+
+
+<!-- 
+  Looping through the reviews associated with this post,
+  and rendering the reviews array unto the page -->
+
+    <span>{{beer.review}}</span>
+
     <img class="image-beer" src="{{beer.image}}">
 
     <hr>
@@ -17,6 +30,6 @@
 
     <input type="text" placeholder="Leave a review" ng-model="reviewText">
     <button class="btn btn-primary" ng-click="addReview()">Post It</button>
-  </h3>
+  
   </div>
 </div>
