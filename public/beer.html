@@ -21,15 +21,20 @@
     <img class="image-beer" src="{{beer.image}}">
 
     <hr>
-      <h4>Reviews</h4>
-      <div ng-repeat="review in beer.reviews">
+      <h1 class="reviewsheader">Reviews</h1>
+      <div class="jumbotron text-center" ng-repeat="review in beer.reviews">
+       
+        <br>
+        <br>
         <h4>{{review.name}}</h4>
-        <p>{{review.text}}</p>
+        <p><strong>{{review.text}}</strong></p>
+
+        <p></p>
       </div>
     </hr>
 
-    <input type="text" placeholder="Leave a review" ng-model="reviewText">
-    <button class="btn btn-primary" ng-click="addReview()">Post It</button>
+    <input type="text" placeholder="Add a review" ng-model="reviewText">
+    <button class="btn btn-primary" ng-click="addReview()">Post</button>
   
   </div>
 </div>
