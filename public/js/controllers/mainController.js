@@ -16,7 +16,7 @@ app.controller('MainCtrl', ['$scope','beerFactory', function($scope, beerFactory
    // $scope.beerArray.push(beer);
    beerFactory.create(beer);
    console.log(beer)
-
+   
    // beerFactory.getAll();
  };
 
