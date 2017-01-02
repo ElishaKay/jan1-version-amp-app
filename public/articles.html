@@ -61,7 +61,7 @@
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
               </button>
-              <a class="navbar-brand page-scroll" href="#page-top">Amp It Up</a>
+              <a class="navbar-brand page-scroll" href="index.html">Amp It Up</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -155,10 +155,10 @@
 If you want to allow users to delete specific memes - unlikely
 I think at this point, it would be wiser to just delete
 any unwanted posts through your db in heroku - research -->
-              <button ng-click='removeBeer($index)'>
+              <!-- <button ng-click='removeBeer($index)'>
                 <i class="fa fa-trash" aria-hidden="true"></i>
               </button>
-
+ -->
             </div>
           </div>
 
@@ -168,36 +168,50 @@ any unwanted posts through your db in heroku - research -->
             <br>
           <div class="jumbotron text-center">
             <h3>Add a new post</h3>
+            <br>
+            <br>
+
+            <div class="row">
+              <div class="col-md-12">
+
+                          <form ng-submit="addBeer()">
+                            
+
+                            <div class="form-group">
+                              <input type="text" class="form-control submissionfield" placeholder="Title" ng-model="name"></input>
+                            </div>
+
+                            <div class="form-group">
+                              <input align="left" type="text" class="form-control submissionfield" placeholder="Comment" ng-model="style"></input>
+                            </div>
+
+                            <div class="form-group">
+                              <input type="text" class="form-control submissionfield" placeholder="Your Name" ng-model="abv"></input>
+                            </div>
+
+                            <div class="form-group">
+                              <input type="text" class="form-control submissionfield" placeholder="Image URL" ng-model="image"></input>
+                            </div>
+
+
+                            <br>
+                            <br>
+
+                            <button type="submit" class="btn btn-primary">Add</button>
+                          </form>
+                    </div>
+                    </div>  
+
           </div>
 
 
-              <div class="page-header">
-              </div>
+
+             <!--  <div class="page-header">
+              </div> -->
 
               <!-- render beers here -->
+      
 
-              <form ng-submit="addBeer()">
-                
-
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Title" ng-model="name"></input>
-                </div>
-
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Comment" ng-model="style"></input>
-                </div>
-
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Your Name" ng-model="abv"></input>
-                </div>
-
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Image URL" ng-model="image"></input>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Add</button>
-              </form>
-            
         <br>
         <br>
 
@@ -243,7 +257,7 @@ any unwanted posts through your db in heroku - research -->
   <div class="col-md-4 col-sm-6 portfolio-item">
     <div class="team-member">
 
-     <a href="https://github.com/ElishaKay" target="_blank" class="page-scroll btn btn-xl">Check out My GitHub</a>
+     <a href="https://github.com/ElishaKay" target="_blank" class="page-scroll btn btn-xl">GitHub Page</a>
 
      <br>
      <br>

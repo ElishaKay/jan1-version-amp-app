@@ -4,7 +4,16 @@ var bodyParser = require('body-parser');
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://localhost/beers');
+
+// For development purposes, uncomment this line:
+// mongoose.connect('mongodb://localhost/beers');
+
+
+// For deployment purposes uncomment this line:
+mongoose.connect(process.env.MONGOLAB_BRONZE_URI ||'mongodb://localhost/beers');
+
+
+
 
 var Beer = require("./models/BeerModel");
 var Review= require('./models/ReviewModel');

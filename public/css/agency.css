@@ -5,10 +5,11 @@
  */
 /* // Blocks of code*/
 
-.reviewsheader{
+.submissionfield { width: 600px; height: 34px; border: 1px solid #999999; padding: 5px; }
 
-  background-color: powderblue;
-  
+
+.reviewsheader{
+  background-color: powderblue;  
 }
 
 /*for placing category divs one on top of each other*/
