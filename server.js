@@ -108,6 +108,5 @@ app.post('/beers/:id/reviews/', function(req, res, next) {
 
 
 // For development, uncomment this line
-app.listen(8000);
 
-// app.listen(process.env.PORT || '4000');
+app.listen(process.env.PORT || '4000');
