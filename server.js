@@ -10,7 +10,7 @@ mongoose.Promise = global.Promise;
 
 
 // For deployment purposes uncomment this line:
-mongoose.connect(process.env.MONGOLAB_BRONZE_URI ||'mongodb://localhost/beers');
+mongoose.connect(process.env.MONGOLAB_JADE_URI ||'mongodb://localhost/beers');
 
 
 
